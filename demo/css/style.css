@@ -1,0 +1,18 @@
+/**
+ *
+ * CSS para pagina inicial
+ * @author: Edy Segura - edy@segura.pro.br
+ *
+ */
+
+div#handle-test {
+	width:100px;
+	height:100px;
+	background:red;
+	float:left;
+	margin-right:50px;
+}
+
+textarea#log {
+	background:#fff;
+}
