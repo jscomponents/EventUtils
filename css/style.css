@@ -1,0 +1,40 @@
+/* CSS Document
+Autor: Edy Segura - edy@liveware.com.br, edy@segura.eti.br
+Descrição: Definições da página index.html
+*/
+
+
+fieldset#comandos {	
+	width:205px;
+	float:left;
+	margin-right:5px;
+}
+
+fieldset#comandos fieldset {	
+	width:95px;
+	float:left;
+}
+
+fieldset#flog {
+	width:300px;
+}
+
+div.botoes {
+	width:80px;
+	float:right;
+	margin-top:10px;
+}
+
+div.botoes
+button {
+	width:80px;
+	border-width:1px;
+	margin-bottom:2px;
+}
+
+p.eventos {
+	background:#FFC;
+	padding:5px;
+	border:1px solid #000;
+	font-weight:bold;
+}

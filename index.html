@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="Edy Segura" />
+<meta name="reply-to" content="edy@segura.eti.br" />
+<meta name="description" content="Componente para adição e remoção dinâmica de eventos" />
+<title>Event.js, Componente para adição e remoção dinâmica de eventos</title>
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="css/style.css" type="text/css" title="Padrão" />
+
+<!-- javascript -->
+<script type="text/javascript" src="js/EventUtils.js"></script>
+<script type="text/javascript" src="js/Index.js"></script>
+
+</head>
+<body>
+
+<h1>Event, Componente para adição e remoção dinâmica de eventos</h1>
+<p>
+	Componente para adição e remoção dinâmica de eventos ao elemento específicado.
+	Para mais detalhes veja o código fonte.
+</p>
+
+<h2>Teste</h2>
+<p class="eventos">Clique aqui para testar os eventos.</p>
+
+<form method="post" action="" onsubmit="return false;">
+	<fieldset id="comandos">
+		<legend>Comandos:</legend>
+		
+		<fieldset>
+			<legend>Eventos:</legend>
+			
+			<input type="checkbox" name="eventos" id="event1" value="Index.getNome" />
+			<label for="event1">Método 01</label>
+			
+			<input type="checkbox" name="eventos" id="event2" value="Index.getSexo" />
+			<label for="event2">Método 02</label>
+			
+			<input type="checkbox" name="eventos" id="event3" value="Index.getIdade" />
+			<label for="event3">Método 03</label>
+			
+			<input type="checkbox" name="eventos" id="event4" value="{nome:'Edy', sobrenome:'Segura'}" />
+			<label for="event4">Método 04</label>
+			
+			<!-- fim do fieldset -->
+		</fieldset>
+		
+		<div class="botoes">
+			<button id="add">Adicionar</button>
+			<button id="remove">Remover</button>
+			<button id="reload">Recarregar</button>
+			<button type="reset">Limpar</button>
+		</div>
+		
+		<!-- fim do fieldset -->
+	</fieldset>
+	
+	<fieldset id="flog">
+		<legend>LOG</legend>
+		<textarea id="log" rows="5" cols="50" readonly="readonly"></textarea>
+	</fieldset>
+	
+	<!-- fim do form -->
+</form>
+
+</body>
+</html>
